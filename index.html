@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Currency exchange</title>
+</head>
+<body>
+    <main>
+        <h1>Exchange your UAH</h1>
+        <div>
+            <label for="UAH">Amount of UAH</label>
+            <input type="text" id="UAH">
+        </div>
+        <div>
+            <select name="currencyList" id="currency_list_to">
+                <option value="BTC">Bitcoin</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">Great Britain Pound</option>
+                <option value="CZK">Czech Crowns</option>
+                <option value="UAH">Ukrainian Hryvnia</option>
+                <option value="RUB">Russian Rubles</option>
+                <option value="USD">United States Dollars</option>
+            </select>
+        </div>
+            <div>
+                <input type="text" id="output">
+            </div>
+        <div>
+            <button onclick="request.onload()">Exchange</button>
+        </div>
+    </main>
+</body>
+    <script src="script.js"></script>
+</html>

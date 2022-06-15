@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(80, 80, 80);
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    transform: scale(2);
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 169px;
+}
+
+button:hover {
+    background-color: #30a437;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin: 10px 0 -15px 0;
+    color: lightgrey;
+}
+
+input {
+    background-color: white;
+    resize: none;
+    outline: none;
+    margin: 20px 0;
+    height: 20px;
+}
+
+select {
+    background-color: white;
+    resize: none;
+    outline: none;
+    height: 20px;
+    width: 169px;
+}
