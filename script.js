@@ -16,22 +16,22 @@ request.onload = function() {
 
             case "BTC" :
                 result = amount * response.rates.BTC;
-                output.value = result.toFixed(5);
+                output.value = result.toFixed(5) + "BTC";
                 break;
 
             case "CZK" :
                 result = amount * response.rates.CZK;
-                output.value = result.toFixed(2);
+                output.value = result.toFixed(2) + "Kč";
                 break;
 
             case "EUR" :
                 result = amount * response.rates.EUR;
-                output.value = result.toFixed(2);;
+                output.value = result.toFixed(2) + "€";
                 break;
 
             case "GBP" :
                 result = amount * response.rates.GBP;
-                output.value = result.toFixed(2);
+                output.value = result.toFixed(2) + "£";
                 break;
 
             case "RUB" :
@@ -39,12 +39,12 @@ request.onload = function() {
                 break;
 
             case "UAH" :
-                output.value = amount.toFixed(2);
+                output.value = amount.toFixed(2) + "₴";
                 break;
 
             case "USD" :
                 result = amount * response.rates.USD;
-                output.value = result.toFixed(2);
+                output.value = result.toFixed(2) + "$";
                 break;
         }
     }
