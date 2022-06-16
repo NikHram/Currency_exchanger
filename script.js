@@ -6,7 +6,6 @@ request.send();
 
 request.onload = function() {
     let response = request.response;
-    console.log(response);
     function proceed() {
         let currency = document.querySelector("#currency_list_to").value;
         let amount = +document.querySelector("#UAH").value
@@ -50,3 +49,9 @@ request.onload = function() {
     }
         proceed();
 }
+
+document.querySelector("#UAH").addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        request.onload();
+    }
+});
